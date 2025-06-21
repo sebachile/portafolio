@@ -3,7 +3,6 @@ body {
   background-color: #000000;
   color: #FFD700;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #FFD700;
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover {
@@ -21,44 +19,25 @@ a:hover {
   text-decoration: underline;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Botones Personalizados */
 .btn-custom {
   background: linear-gradient(90deg, #FFD700, #CCB800);
   color: #000000;
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
   background: linear-gradient(90deg, #CCB800, #FFD700);
-  color: #ffffff;
-  box-shadow: 0 6px 10px rgba(255, 215, 0, 0.5);
-  transform: translateY(-2px);
-  border: 2px solid #FFD700;
+  color: #000; /* O elige otro más visible como blanco */
+  box-shadow: 0 4px 6px rgba(255, 215, 0, 0.5);
 }
 
-/* Espaciado entre Secciones */
 .section-padding {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
-@media (max-width: 768px) {
-  .section-padding {
-    padding: 40px 0;
-  }
-}
-
-/* Hero Section */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -67,7 +46,6 @@ html {
   justify-content: center;
   text-align: center;
   color: #FFD700;
-  background-color: #000000;
 }
 
 .hero-section h1 {
@@ -80,81 +58,18 @@ html {
   margin-bottom: 30px;
 }
 
-.hero-section .btn-custom {
-  font-size: 1rem;
-  padding: 10px 20px;
+.contact-info {
+  color: #CCCCCC;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: auto;
-    padding: 60px 20px;
-  }
-
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .hero-section p {
-    font-size: 1rem;
-  }
-
-  .hero-section .btn-custom {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-
-/* Tarjetas de Proyectos */
 .project-card {
   background-color: #1C1C1C;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(255, 215, 0, 0.5);
-}
-
-/* Footer */
-footer {
-  background-color: #111111;
-  color: #CCCCCC;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #FFD700;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #CCB800;
-}
-
-/* Optimización para Impresión */
-@media print {
-  body {
-    background-color: #FFFFFF;
-    color: #000000;
-  }
-
-  a {
-    color: #0000FF !important;
-    text-decoration: underline;
-  }
-
-  .btn-custom {
-    display: none;
-  }
-
-  footer {
-    display: none;
-  }
 }
