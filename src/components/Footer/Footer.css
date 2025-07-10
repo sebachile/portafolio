@@ -1,0 +1,11 @@
+/* src/components/Footer/Footer.css */
+footer {
+    background-color: #111111;
+    color: #CCCCCC;
+  }
+  footer a {
+    color: #FFD700;
+  }
+  footer a:hover {
+    color: #CCB800;
+  }

@@ -1,0 +1,30 @@
+/* src/components/ScrollFloat/ScrollFloat.css */
+
+.scroll-float {
+    /* Estilos base para el contenedor del componente (en tu caso, un h2) */
+    /* Asegura que el texto esté visible inicialmente si ScrollTrigger no lo controla de inmediato */
+    opacity: 1; /* Esto es para el contenedor, los chars individuales tendrán opacity: 0 al inicio */
+  }
+  
+  .scroll-float-text {
+    /* Estilos para el span que envuelve el texto dividido */
+    display: inline-block; /* Importante para que los spans .char se puedan posicionar */
+    overflow: hidden; /* Asegura que los caracteres fuera de vista no sean visibles */
+  }
+  
+  .scroll-float-text .char {
+    /* Estilos para cada carácter individual */
+    display: inline-block; /* Cada carácter será un elemento separado */
+    /* Añade estilos para el texto en sí (color, tamaño, etc.) */
+    color: white; /* O el color que desees para tus títulos/textos */
+    font-size: 3rem; /* Ajusta según el tamaño de tu título */
+    font-weight: bold;
+    line-height: 1.2; /* Ajusta el interlineado */
+  }
+  
+  /* Puedes añadir media queries aquí para responsive design si es necesario */
+  @media (max-width: 768px) {
+    .scroll-float-text .char {
+      font-size: 2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+  }

@@ -1,0 +1,10 @@
+/* src/components/ContactSection/ContactSection.css */
+.contact-info {
+  color: #CCCCCC;
+}
+.contact-info a {
+    color: #FFD700;
+}
+.contact-info a:hover {
+    color: #CCB800;
+}
